@@ -4,9 +4,9 @@ Test short closure recursion
 
 --GIVEN--
 
-$cb = () => {
-    return () => {
-        return () => {
+$cb = () ==> {
+    return () ==> {
+        return () ==> {
             return "hello world";
         };
     };

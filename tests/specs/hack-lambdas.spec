@@ -7,13 +7,15 @@ Test short closure macros
 class Fixture
 {
     public function foo($end) {
-        return ($name) => {
+        return ($name) ==> {
             return "hello {$name}{$end}";
         };
     }
 }
 
 --EXPECT--
+
+<?php
 
 class Fixture
 {
